@@ -1,0 +1,58 @@
+{
+  "paging": {
+    "page": 0,
+    "count": 2,
+    "maxPage": 0,
+    "itemsTotal": 2
+  },
+  "packages": [
+    {
+      "id": "org.ownyourglass.app",
+      "title": "Own Your Glass",
+      "iconUri": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/icons/org.ownyourglass.app.png",
+      "shortDescription": "Privacy hardening for rooted LG webOS TVs. Stops ACR, ad overlays, telemetry uploaders, remote-support and voice pipelines at the source. Fully reversible: undo everything from the app, or just uninstall it.",
+      "category": "system",
+      "pool": "main",
+      "manifestUrl": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/manifests/org.ownyourglass.app.json",
+      "manifest": {
+        "id": "org.ownyourglass.app",
+        "version": "1.2.3",
+        "type": "web",
+        "title": "Own_Your_Glass",
+        "appDescription": "Privacy hardening for rooted LG webOS TVs. Stops ACR, ad overlays, telemetry uploaders, remote-support and voice pipelines at the source. Fully reversible: undo everything from the app, or just uninstall it.",
+        "iconUri": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/icons/org.ownyourglass.app.png",
+        "sourceUrl": "https://github.com/fivefold3/own-your-glass",
+        "rootRequired": true,
+        "ipkUrl": "https://github.com/fivefold3/own-your-glass/releases/download/v1.2.3/org.ownyourglass.app_1.2.3_all.ipk",
+        "ipkHash": {
+          "sha256": "9710ae7a3d8b4b7f333ea8fdf26e9a1788ea60886d47e51635c6c75e10b0611a"
+        },
+        "ipkSize": 44982
+      }
+    },
+    {
+      "id": "com.lginputmapper.app",
+      "title": "LG Input Mapper",
+      "iconUri": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/icons/com.lginputmapper.app.png",
+      "shortDescription": "Remap the buttons on your LG Magic Remote, on the TV itself (rooted webOS)",
+      "category": "system",
+      "pool": "main",
+      "manifestUrl": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/manifests/com.lginputmapper.app.json",
+      "manifest": {
+        "id": "com.lginputmapper.app",
+        "version": "1.0.0",
+        "type": "web",
+        "title": "LG_Input_Mapper",
+        "appDescription": "Remap the buttons on your LG Magic Remote, on the TV itself (rooted webOS)",
+        "iconUri": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/icons/com.lginputmapper.app.png",
+        "sourceUrl": "https://github.com/fivefold3/lginputmapper",
+        "rootRequired": true,
+        "ipkUrl": "https://github.com/fivefold3/lginputmapper/releases/download/v1.0.0/com.lginputmapper.app_1.0.0_all.ipk",
+        "ipkHash": {
+          "sha256": "61a473f5f20ae6f7b52c5356eed0f12b7b37decee491aba886dc80c19c95eaad"
+        },
+        "ipkSize": 252276
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# owner/repo                  app id                  title             category
+fivefold3/own-your-glass      org.ownyourglass.app    Own_Your_Glass    system
+fivefold3/lginputmapper       com.lginputmapper.app   LG_Input_Mapper   system
