@@ -1,15 +1,15 @@
 {
   "id": "com.lginputmapper.app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "web",
-  "title": "LG_Input_Mapper",
+  "title": "LG Input Mapper",
   "appDescription": "Remap the buttons on your LG Magic Remote, on the TV itself (rooted webOS)",
   "iconUri": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/icons/com.lginputmapper.app.png",
   "sourceUrl": "https://github.com/fivefold3/lginputmapper",
   "rootRequired": true,
-  "ipkUrl": "https://github.com/fivefold3/lginputmapper/releases/download/v1.0.0/com.lginputmapper.app_1.0.0_all.ipk",
+  "ipkUrl": "https://github.com/fivefold3/lginputmapper/releases/download/v1.0.1/com.lginputmapper.app_1.0.1_all.ipk",
   "ipkHash": {
-    "sha256": "61a473f5f20ae6f7b52c5356eed0f12b7b37decee491aba886dc80c19c95eaad"
+    "sha256": "4017422250e8b0c7524c772431287da9cb7918f7c8ed742b33fed87b0bd87e3e"
   },
-  "ipkSize": 252276
+  "ipkSize": 252336
 }

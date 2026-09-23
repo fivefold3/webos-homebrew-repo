@@ -2,7 +2,7 @@
   "id": "org.ownyourglass.app",
   "version": "1.2.3",
   "type": "web",
-  "title": "Own_Your_Glass",
+  "title": "Own Your Glass",
   "appDescription": "Privacy hardening for rooted LG webOS TVs. Stops ACR, ad overlays, telemetry uploaders, remote-support and voice pipelines at the source. Fully reversible: undo everything from the app, or just uninstall it.",
   "iconUri": "https://raw.githubusercontent.com/fivefold3/webos-homebrew-repo/main/icons/org.ownyourglass.app.png",
   "sourceUrl": "https://github.com/fivefold3/own-your-glass",

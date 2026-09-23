@@ -1,3 +1,3 @@
-# owner/repo                  app id                  title             category
+# owner/repo                  app id                  title             category   (underscores in title become spaces)
 fivefold3/own-your-glass      org.ownyourglass.app    Own_Your_Glass    system
 fivefold3/lginputmapper       com.lginputmapper.app   LG_Input_Mapper   system
