@@ -25,6 +25,9 @@ homebrew app. Both need a rooted TV (<https://www.webosbrew.org/rooting/>).
   app, each with a `manifestUrl` (and the manifest inlined).
 - `manifests/<app id>.json` — the per-app manifest: `ipkUrl` and `ipkHash.sha256`
   of the release asset.
+- `descriptions/<app id>.html` — the description Homebrew Channel shows on the
+  app page (`fullDescriptionUrl`), generated from `appDescription`. It must be
+  HTML: plain text there gets its first line clipped.
 - `icons/` — app icons served over raw.githubusercontent.com.
 - `apps.txt` and `tools/update.sh` — the list of apps and the script that
   refreshes every manifest and `repo.json` from each app's latest GitHub

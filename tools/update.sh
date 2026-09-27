@@ -68,10 +68,15 @@ PY
 done
 [ -f "$TMP/failed" ] && failed=1
 
-# repo.json = paging + one package per manifest
+# repo.json = paging + one package per manifest, plus descriptions/<id>.html.
+# Homebrew Channel renders the description as HTML and its stylesheet assumes
+# it opens with a block element (.rich-description has margin-top: -1em inside
+# an overflow: hidden box), so bare text gets its first line clipped. Like the
+# official webosbrew repo, point fullDescriptionUrl at an HTML file instead.
 python3 - "$REPO_RAW" <<'PY'
-import json, os, sys
+import json, os, sys, html
 raw = sys.argv[1]
+os.makedirs("descriptions", exist_ok=True)
 pk = []
 for line in open("apps.txt"):
     if not line.strip() or line.startswith("#"): continue
@@ -79,9 +84,14 @@ for line in open("apps.txt"):
     p = f"manifests/{id_}.json"
     if not os.path.exists(p): continue
     m = json.load(open(p))
+    desc = m.get("appDescription", "")
+    paras = [s.strip() for s in desc.split("\n\n") if s.strip()] or ["No description provided for this package"]
+    with open(f"descriptions/{id_}.html", "w") as f:
+        f.write("".join(f"<p>{html.escape(s)}</p>\n" for s in paras))
     pk.append({"id": id_, "title": title.replace("_", " "), "iconUri": m["iconUri"],
-               "shortDescription": m.get("appDescription", ""), "category": category, "pool": "main",
+               "shortDescription": desc, "category": category, "pool": "main",
                "manifestUrl": f"{raw}/manifests/{id_}.json",
+               "fullDescriptionUrl": f"{raw}/descriptions/{id_}.html",
                "manifest": m})
 with open("repo.json", "w") as f:
     json.dump({"paging": {"page": 0, "count": len(pk), "maxPage": 0, "itemsTotal": len(pk)}, "packages": pk}, f, indent=2)
